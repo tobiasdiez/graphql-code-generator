@@ -122,7 +122,7 @@
     "@graphql-tools/links": "8.0.0-alpha-af9a78de.0",
     "@graphql-tools/load": "7.0.0-alpha-af9a78de.0",
     "@graphql-tools/apollo-engine-loader": "7.0.0-alpha-af9a78de.0",
-    "@graphql-tools/code-file-loader": "7.0.0-alpha-af9a78de.0",
+    "@graphql-tools/code-file-loader": "6.4.0-alpha-285222a2.0",
     "@graphql-tools/git-loader": "7.0.0-alpha-af9a78de.0",
     "@graphql-tools/github-loader": "7.0.0-alpha-af9a78de.0",
     "@graphql-tools/graphql-file-loader": "7.0.0-alpha-af9a78de.0",

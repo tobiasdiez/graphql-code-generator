@@ -22,7 +22,7 @@ export const preset: Types.OutputPreset<{
       [`typescript`]: typescriptPlugin,
       [`typescript-operations`]: typescriptOperationPlugin,
       [`typed-document-node`]: typedDocumentNodePlugin,
-      [`gql-tag`]: gqlTagPlugin,
+      [`gen-dts`]: gqlTagPlugin,
     };
 
     const plugins: Array<Types.ConfiguredPlugin> = [
