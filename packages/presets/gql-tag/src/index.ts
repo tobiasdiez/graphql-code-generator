@@ -7,12 +7,10 @@ import * as typescriptPlugin from '@graphql-codegen/typescript';
 import * as gqlTagPlugin from '@graphql-codegen/gql-tag';
 import { processSources } from './process-sources';
 
-export const preset: Types.OutputPreset<{
-  packageName: string;
-}> = {
-  buildGeneratesSection: options => {
-    const packageName = options.presetConfig.packageName ?? `@app/gql`;
+export type GqlTagConfig = {};
 
+export const preset: Types.OutputPreset<GqlTagConfig> = {
+  buildGeneratesSection: options => {
     const sourcesWithOperations = processSources(options.documents);
     const sources = sourcesWithOperations.map(({ source }) => source);
 
@@ -35,7 +33,7 @@ export const preset: Types.OutputPreset<{
 
     const genDtsPlugins: Array<Types.ConfiguredPlugin> = [
       { [`add`]: { content: `/* eslint-disable */` } },
-      { [`gen-dts`]: { sourcesWithOperations, packageName } },
+      { [`gen-dts`]: { sourcesWithOperations } },
     ];
 
     return [
